@@ -1,0 +1,15 @@
+{
+  "name": "balzan-website",
+  "version": "0.0.1",
+  "description": "A website for the Centre for Cosmological Studies at New College, Oxford",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rogerhutchings/balzan-website.git"
+  },
+  "author": "Roger Hutchings <roger@hutchin.gs>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rogerhutchings/balzan-website/issues"
+  },
+  "homepage": "https://github.com/rogerhutchings/balzan-website"
+}
