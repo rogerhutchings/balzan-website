@@ -11,5 +11,8 @@
   "bugs": {
     "url": "https://github.com/rogerhutchings/balzan-website/issues"
   },
-  "homepage": "https://github.com/rogerhutchings/balzan-website"
+  "homepage": "https://github.com/rogerhutchings/balzan-website",
+  "devDependencies": {
+    "harp": "^0.15.2"
+  }
 }
