@@ -13,6 +13,7 @@
   },
   "homepage": "https://github.com/rogerhutchings/balzan-website",
   "devDependencies": {
+    "bootstrap-styl": "^4.0.3",
     "harp": "^0.15.2",
     "nib": "^1.1.0"
   }
