@@ -1,28 +1,24 @@
 bootstrap(name)
-    $npm_dir + '/bootstrap-styl/bootstrap'
-
-// Stylus appears to be slow when importing selectively, so for now, we'll
-// import everything
-@import bootstrap('index')
+    $npm_dir + '/bootstrap-styl/bootstrap/' + name
 
 // Core variables and mixins
-// @import bootstrap('variables')
-// @import bootstrap('mixins')
+@import bootstrap('variables')
+@import bootstrap('mixins')
 
 // Reset and dependencies
-// @import bootstrap('normalize')
-// @import bootstrap('print')
-// @import bootstrap('glyphicons')
+@import bootstrap('normalize')
+@import bootstrap('print')
+@import bootstrap('glyphicons')
 
 // Core CSS
-// @import bootstrap('scaffolding')
-// @import bootstrap('utilities')
-// @import bootstrap('type')
-// @import bootstrap('code')
-// @import bootstrap('grid')
+@import bootstrap('scaffolding')
+@import bootstrap('utilities')
+@import bootstrap('type')
+@import bootstrap('code')
+@import bootstrap('grid')
 // @import bootstrap('tables')
 // @import bootstrap('forms')
-// @import bootstrap('buttons')
+@import bootstrap('buttons')
 
 // Components
 // @import bootstrap('component-animations')
@@ -54,4 +50,4 @@ bootstrap(name)
 // @import bootstrap('carousel')
 
 // Utility classes
-// @import bootstrap('responsive-utilities')
+@import bootstrap('responsive-utilities')
