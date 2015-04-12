@@ -9,6 +9,11 @@
                 "filename": "_content/_about"
             },
             {
+                "title": "Organisation",
+                "id": "organisation",
+                "filename": "_content/_organisation"
+            },
+            {
                 "title": "Applications",
                 "id": "applications",
                 "filename": "_content/_applications"
