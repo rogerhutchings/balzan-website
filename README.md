@@ -1,6 +1,13 @@
 # balzan-website
 A website for the Centre for Cosmological Studies at New College, Oxford - [link](http://balzan.new.ox.ac.uk/)
 
+### Technologies
+
+- Harp (using EJS)
+- Stylus
+- Bootstrap
+- [Grayscale](https://ironsummitmedia.github.io/startbootstrap-grayscale/)
+
 ### Conventions
 
 - [RSCSS](https://github.com/rstacruz/rscss)
