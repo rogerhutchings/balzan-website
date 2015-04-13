@@ -4,6 +4,7 @@ All notable changes to this project will be documented in this file. This projec
 ## [Unreleased]
 ### Changed
 - Add technologies section to README
+- Convert layout to EJS, add metadata to HEAD
 
 ## [0.1.0] - 2015-04-12
 ### Added
