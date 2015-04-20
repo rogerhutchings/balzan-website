@@ -2,14 +2,21 @@
 All notable changes to this project will be documented in this file. This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
+### Added
+- Add instructions and technologies sections to README
+
 ### Changed
-- Add technologies section to README
 - Convert layout to EJS, add metadata to HEAD
+- Resize and fix behaviour of organisation member images
+- Change js easing to make the site feel more responsive
+
+### Removed
+- Commented out more unused Bootstrap components
 
 ## [0.1.0] - 2015-04-12
 ### Added
 - Organisation member image files and data
-- FontAwsome via CDN
+- FontAwesome via CDN
 
 ### Changed
 - Removed Bootstrap components where possible
