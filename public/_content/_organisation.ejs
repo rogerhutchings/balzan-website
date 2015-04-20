@@ -50,7 +50,9 @@
 
 <% people.forEach(function (person) { %>
     <div class="organisation-member">
-        <img class="image" src="<%= person.image %>">
+        <div class="image">
+            <img src="<%= person.image %>">
+        </div>
         <div class="details">
             <div><%= person.name %></div>
             <div><%= person.title %></div>
