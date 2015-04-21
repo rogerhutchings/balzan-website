@@ -1,6 +1,6 @@
 {
   "name": "balzan-website",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "A website for the Centre for Cosmological Studies at New College, Oxford",
   "repository": {
     "type": "git",
@@ -12,9 +12,16 @@
     "url": "https://github.com/rogerhutchings/balzan-website/issues"
   },
   "homepage": "https://github.com/rogerhutchings/balzan-website",
-  "devDependencies": {
+  "dependencies": {
     "bootstrap-styl": "^4.0.3",
     "harp": "^0.15.2",
     "nib": "^1.1.0"
+  },
+  "scripts": {
+    "start": "NODE_ENV=production harp server -p $PORT",
+    "dev": "harp server"
+  },
+  "engines": {
+    "node": "0.10.x"
   }
 }
