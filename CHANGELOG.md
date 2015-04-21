@@ -9,6 +9,9 @@ All notable changes to this project will be documented in this file. This projec
 - Convert layout to EJS, add metadata to HEAD
 - Resize and fix behaviour of organisation member images
 - Change js easing to make the site feel more responsive
+- Fix padding on collapsed menu
+- Add fade to bottom of bg image
+- Changed non-semantic <i> to <span> for icons
 
 ### Removed
 - Commented out more unused Bootstrap components
