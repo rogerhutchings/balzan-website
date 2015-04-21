@@ -1,7 +1,7 @@
 # Change Log
 All notable changes to this project will be documented in this file. This project adheres to [Semantic Versioning](http://semver.org/).
 
-## [Unreleased]
+## [0.2.0] - 2015-04-21
 ### Added
 - Add instructions and technologies sections to README
 
@@ -12,6 +12,7 @@ All notable changes to this project will be documented in this file. This projec
 - Fix padding on collapsed menu
 - Add fade to bottom of bg image
 - Changed non-semantic <i> to <span> for icons
+- Update footer text, reduce size
 
 ### Removed
 - Commented out more unused Bootstrap components
