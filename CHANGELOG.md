@@ -2,6 +2,12 @@
 All notable changes to this project will be documented in this file. This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased][Unreleased]
+### Added
+- Text shadow to intro section
+
+### Changed
+- Bit of HTML refactoring
+
 ### Removed
 - Glyphicon styles
 

@@ -1,12 +1,14 @@
 .intro-section
-    display: table
-    size: 100% auto
-    padding: 100px 0
-    text-align: center
     background: url('../img/intro-bg.jpg') no-repeat bottom center scroll
     background-size: cover
+    display: table
+    padding: 100px 0
+    text-align: center
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
+    size: 100% auto
 
     > .body
+        @extend .container
         display: table-cell
         vertical-align: middle
 
@@ -19,13 +21,13 @@
 
     .button
         @extend .btn
-        size: 70px 70px
-        margin-top: 15px
-        padding: 7px 16px
         border: 2px solid #fff
         border-radius: 100% !important
-        font-size: 40px
         color: #fff
+        font-size: 40px
+        margin-top: 15px
+        padding: 7px 16px
+        size: 70px 70px
         background: 0 0
         transition: background .3s ease-in-out
 
@@ -33,7 +35,7 @@
     .button:focus
         outline: 0
         color: #fff
-        background: rgba(255,255,255,.1)
+        background: rgba(#fff, 0.1)
 
     .button i.animated
         transition-property: -webkit-transform
