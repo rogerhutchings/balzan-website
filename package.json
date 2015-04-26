@@ -19,7 +19,8 @@
   },
   "scripts": {
     "start": "NODE_ENV=production harp server -p $PORT",
-    "dev": "harp server"
+    "deploy": "./node_modules/.bin/harp compile",
+    "dev": "./node_modules/.bin/harp server"
   },
   "engines": {
     "node": "0.10.x"

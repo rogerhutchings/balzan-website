@@ -4,6 +4,8 @@ All notable changes to this project will be documented in this file. This projec
 ## [Unreleased][Unreleased]
 ### Added
 - Text shadow to intro section
+- .gitignore
+- Dummy deploy task
 
 ### Changed
 - Bit of HTML refactoring
