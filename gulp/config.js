@@ -8,7 +8,7 @@ module.exports = {
 
     production: process.env.NODE_ENV === 'production',
 
-    port: 9000 || process.env.PORT,
+    port: process.env.PORT || 9000,
 
     harp: {
         src: root
