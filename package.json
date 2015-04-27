@@ -14,6 +14,9 @@
   "homepage": "https://github.com/rogerhutchings/balzan-website",
   "dependencies": {
     "bootstrap-styl": "^4.0.3",
+    "browser-sync": "^2.6.5",
+    "bulk-require": "^0.2.1",
+    "gulp": "^3.8.11",
     "harp": "^0.15.2",
     "nib": "^1.1.0"
   },
