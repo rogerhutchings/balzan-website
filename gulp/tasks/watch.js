@@ -4,7 +4,7 @@ var browserSync = require('browser-sync');
 var config        = require('../config');
 var gulp          = require('gulp');
 
-gulp.task('watch', ['javascript', 'browserSync', 'server'], function () {
+gulp.task('watch', ['browserSync', 'server'], function () {
 
     gulp.watch(config.js.src, ['javascript']);
 

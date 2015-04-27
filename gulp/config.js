@@ -6,7 +6,9 @@ var root = path.normalize(__dirname + '/..');
 
 module.exports = {
 
-    port: 9000,
+    production: process.env.NODE_ENV === 'production',
+
+    port: 9000 || process.env.PORT,
 
     harp: {
         src: root
