@@ -24,7 +24,7 @@
     "nib": "^1.1.0"
   },
   "scripts": {
-    "start": "NODE_ENV=production ./node_modules/.bin/gulp server",
+    "start": "./node_modules/.bin/gulp javascript; NODE_ENV=production ./node_modules/.bin/harp server",
     "dev": "./node_modules/.bin/gulp dev"
   },
   "engines": {
