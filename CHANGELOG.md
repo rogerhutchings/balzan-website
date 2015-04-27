@@ -6,6 +6,7 @@ All notable changes to this project will be documented in this file. This projec
 - Text shadow to intro section
 - .gitignore
 - Dummy deploy task
+- Gulp wrapper for harp tasks and JS compilation
 
 ### Changed
 - Bit of HTML refactoring
