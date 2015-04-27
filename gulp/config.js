@@ -22,6 +22,12 @@ module.exports = {
 
     build: {
         dest: root + '/www'
+    },
+
+    js: {
+        src: [root + '/public/_js/jquery.js', root + '/public/_js/*.js'],
+        dest: root + '/public',
+        compiled: root + '/public/app.js'
     }
 
 };
