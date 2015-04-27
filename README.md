@@ -5,7 +5,7 @@ A website for the Centre for Cosmological Studies at New College, Oxford - [link
 
 1. Check out the repo.
 2. Install required dependencies by running `npm install`.
-3. Start the Harp development server with `gulp dev`.
+3. Start the Harp development server with `gulp dev`. This includes BrowserSync, and will reload on changes.
 4. Compile a static version with `gulp compile` (eventually to be used with a deploy task).
 
 ### Deploying to Heroku
