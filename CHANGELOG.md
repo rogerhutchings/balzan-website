@@ -1,15 +1,17 @@
 # Change Log
 All notable changes to this project will be documented in this file. This project adheres to [Semantic Versioning](http://semver.org/).
 
-## [Unreleased][Unreleased]
+## [0.4.0] - 2015-04-27
 ### Added
+- Gulp wrapper for dev, harp tasks and JS compilation
 - Text shadow to intro section
 - .gitignore
 - Dummy deploy task
-- Gulp wrapper for harp tasks and JS compilation
 
 ### Changed
 - Bit of HTML refactoring
+- Update NPM scripts to use Gulp tasks
+- Updated README
 
 ### Removed
 - Glyphicon styles
