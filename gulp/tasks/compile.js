@@ -2,8 +2,9 @@
 
 var config = require('../config.js');
 var gulp = require('gulp');
-var harp = require('harp');
+var runSequence = require('run-sequence');
 
-gulp.task('compile', ['javascript'], function () {
-    return harp.compile(__dirname, config.build.dest, function () {});
+gulp.task('compile', function (cb) {
+    config.production = true;
+    runSequence('clean', ['javascript', 'harp'], cb)
 });
