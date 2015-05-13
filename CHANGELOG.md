@@ -1,6 +1,12 @@
 # Change Log
 All notable changes to this project will be documented in this file. This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [0.4.1] - 2015-05-13
+## Changed
+- Misc content changes
+- Fixed deploy task
+- Misc Gulp formatting
+
 ## [0.4.0] - 2015-04-27
 ### Added
 - Gulp wrapper for dev, harp tasks and JS compilation
