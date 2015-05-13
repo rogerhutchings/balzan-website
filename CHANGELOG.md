@@ -1,6 +1,13 @@
 # Change Log
 All notable changes to this project will be documented in this file. This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [Unreleased][Unreleased]
+### Added
+- Template watch text
+
+### Changed
+- Misc text changes
+
 ## [0.4.0] - 2015-04-27
 ### Added
 - Gulp wrapper for dev, harp tasks and JS compilation
