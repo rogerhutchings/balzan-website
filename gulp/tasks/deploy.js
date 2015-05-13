@@ -10,8 +10,8 @@ gulp.task('deploy', ['compile'], function () {
             destination: config.remote.path,
             hostname: config.remote.server,
             progress: true,
-            recursive: true
+            recursive: true,
             root: 'build',
-            username: config.remote.username,
+            username: config.remote.username
         }));
 });
