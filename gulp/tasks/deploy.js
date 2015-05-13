@@ -7,11 +7,11 @@ var rsync = require('gulp-rsync');
 gulp.task('deploy', ['compile'], function () {
     return gulp.src(config.build.dest)
         .pipe(rsync({
-            root: 'build',
-            hostname: config.remote.server,
             destination: config.remote.path,
-            username: config.remote.username,
+            hostname: config.remote.server,
             progress: true,
             recursive: true
+            root: 'build',
+            username: config.remote.username,
         }));
 });

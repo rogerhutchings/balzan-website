@@ -27,7 +27,7 @@
     "run-sequence": "^1.1.0"
   },
   "scripts": {
-    "start": "NODE_ENV=production ./node_modules/.bin/gulp server",
+    "start": "./node_modules/.bin/gulp compile && NODE_ENV=production ./node_modules/.bin/gulp server",
     "dev": "./node_modules/.bin/gulp dev"
   },
   "engines": {

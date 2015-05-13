@@ -6,11 +6,12 @@ A website for the Centre for Cosmological Studies at New College, Oxford - [link
 1. Check out the repo.
 2. Install required dependencies by running `npm install`.
 3. Start the Harp development server with `gulp dev`. This includes BrowserSync, and will reload on changes.
-4. Compile a static version with `gulp compile` (eventually to be used with a deploy task).
+4. Compile a static version with `gulp compile`.
+5. Deploy with `gulp deploy` - requires SSH access.
 
 ### Deploying to Heroku
 
-Running `npm run start` will start the production server, so pushing the whole thing to a Heroku app should just work. Note that the environment is already set to production by the run script - no need to set a Heroku environment variable.
+`npm run start` has been defined in the `package.json`, so theoretically it should all just work if you want to push to Heroku. This is currently untested though, as it's being deployed statically elsewhere.
 
 ### Technologies
 
