@@ -36,6 +36,10 @@ module.exports = {
         server: 'balzan.new.ox.ac.uk',
         path: '/srv/www/htdocs',
         username: 'ddarg'
+    },
+
+    templates: {
+        watch: root + '/public/**/*.ejs'
     }
 
 };

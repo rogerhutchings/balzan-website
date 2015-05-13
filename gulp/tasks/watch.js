@@ -20,4 +20,8 @@ gulp.task('watch', ['browserSync', 'server'], function () {
         });
     });
 
+    gulp.watch(config.templates.watch, function () {
+        browserSync.reload();
+    });
+
 });
