@@ -1,6 +1,6 @@
 {
   "name": "balzan-website",
-  "version": "0.4.2",
+  "version": "1.0.0",
   "description": "A website for the Centre for Cosmological Studies at New College, Oxford",
   "repository": {
     "type": "git",
@@ -8,6 +8,7 @@
   },
   "author": "Roger Hutchings <roger@hutchin.gs>",
   "license": "ISC",
+  "private": true,
   "bugs": {
     "url": "https://github.com/rogerhutchings/balzan-website/issues"
   },
@@ -22,13 +23,14 @@
     "gulp-if": "^1.2.5",
     "gulp-rsync": "0.0.5",
     "gulp-uglify": "^1.2.0",
-    "harp": "^0.15.2",
+    "harp": "^0.20.0",
     "nib": "^1.1.0",
     "run-sequence": "^1.1.0"
   },
   "scripts": {
-    "start": "./node_modules/.bin/gulp compile && NODE_ENV=production ./node_modules/.bin/gulp server",
-    "dev": "./node_modules/.bin/gulp dev"
+    "start": "gulp",
+    "deploy": "gulp deploy"
+
   },
   "engines": {
     "node": "0.10.x"

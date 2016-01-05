@@ -6,5 +6,5 @@ var runSequence = require('run-sequence');
 
 gulp.task('compile', ['clean'], function (cb) {
     config.production = true;
-    runSequence(['javascript', 'harp'], cb)
+    runSequence(['javascript', 'harp'], cb);
 });

@@ -14,7 +14,7 @@ var uglifyArgs = {
 
 gulp.task('javascript', function () {
     return gulp.src(config.js.src)
-    .pipe(concat('app.js'))
-    .pipe(gulpif(config.production, uglify(uglifyArgs)))
-    .pipe(gulp.dest(config.js.dest));
+        .pipe(concat('app.js'))
+        .pipe(gulpif(config.production, uglify(uglifyArgs)))
+        .pipe(gulp.dest(config.js.dest));
 });

@@ -27,7 +27,10 @@ module.exports = {
     },
 
     js: {
-        src: [root + '/public/_js/jquery.js', root + '/public/_js/*.js'],
+        src: [
+            root + '/public/_js/jquery.js',
+            root + '/public/_js/*.js'
+        ],
         dest: root + '/public',
         compiled: root + '/public/app.js'
     },
