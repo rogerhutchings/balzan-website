@@ -1,6 +1,16 @@
 # Change Log
 All notable changes to this project will be documented in this file. This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [1.0.0] - 2016-01-05
+### Removed
+- Ditched the Heroku support. It wasn't being used in practice, and was adding needless complexity. As a result, I'm bumping the major version
+- Removed `browser-sync`, `dev` Gulp tasks
+
+### Changed 
+- Minor content change
+- Integrate `browser-sync` and `server` gulp tasks
+- Updated README
+
 ## [0.4.2] - 2015-05-13
 ### Added
 - Fix watch task to reload on template changes
