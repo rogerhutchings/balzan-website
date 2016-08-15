@@ -1,14 +1,19 @@
+[![Build Status](https://travis-ci.org/rogerhutchings/balzan-website.svg?branch=master)](https://travis-ci.org/rogerhutchings/balzan-website)
+
 # balzan-website
 
-A website for the Centre for Cosmological Studies at New College, Oxford.
+A static website for the Centre for Cosmological Studies at New College, Oxford.
 
 ### Instructions
 
 1. Check out the repo.
-2. Install required dependencies by running `npm install`.
-3. Start the Harp development server with `npm run start`. This includes BrowserSync, and will reload on changes.
-4. Deploy with `npm run deploy` - requires SSH access.
-5. Optionally, compile a static version with `gulp compile`.
+1. Install required dependencies by running `npm install`.
+1. Start the Harp development server with `npm run start`. This includes BrowserSync, and will reload on changes.
+1. Optionally, compile a static version with `gulp compile`.
+
+## Deployment
+
+Deploys happen automatically on commits to the `master` branch, via [Travis CI](https://travis-ci.org/rogerhutchings/balzan-website) and Rsync. Instructions on the process [via oncletom](https://oncletom.io/2016/travis-ssh-deploy/).
 
 ### Technologies
 
