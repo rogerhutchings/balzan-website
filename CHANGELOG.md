@@ -1,6 +1,16 @@
 # Change Log
 All notable changes to this project will be documented in this file. This project adheres to [Semantic Versioning](http://semver.org/).
 
+## [2.0.0] - 2016-08-15
+### Added
+- Travis config for automatic deployment 
+
+### Removed
+- Deploy task
+
+### Changed
+- Replaced Chris Doogue with Ashling Morris
+
 ## [1.0.0] - 2016-01-05
 ### Removed
 - Ditched the Heroku support. It wasn't being used in practice, and was adding needless complexity. As a result, I'm bumping the major version
