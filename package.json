@@ -27,11 +27,14 @@
     "run-sequence": "^1.1.0"
   },
   "scripts": {
-    "start": "gulp",
-    "build": "gulp compile"
-
+    "_check": "check-engines",
+    "start": "npm run _check && gulp",
+    "build": "npm run _check && gulp compile"
   },
   "engines": {
-    "node": "0.10.x"
+    "node": "4"
+  },
+  "devDependencies": {
+    "check-engines": "^1.5.0"
   }
 }
