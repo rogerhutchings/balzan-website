@@ -3,9 +3,7 @@ language: node_js
 node_js:
   - '4'
 
-cache:
-  directories:
-    - node_modules
+cache: npm
 
 before_install:
   - openssl aes-256-cbc -K $encrypted_d7212df6fd0a_key -iv $encrypted_d7212df6fd0a_iv
@@ -27,6 +25,6 @@ before_deploy:
 deploy:
   skip_cleanup: true
   provider: script
-  script: rsync -zvr -e "ssh -o StrictHostKeyChecking=no" $TRAVIS_BUILD_DIR/build/ $SSH_USER@balzan.new.ox.ac.uk:~/www
+  script: rsync -zvr -e "ssh -o StrictHostKeyChecking=no" $TRAVIS_BUILD_DIR/build/ $SSH_USER@newc-web.new.ox.ac.uk:~/website
   on:
     branch: master
