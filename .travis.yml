@@ -1,30 +1,24 @@
-sudo: false
 language: node_js
 node_js:
-  - '4'
-
+- '4'
 cache: npm
-
+addons:
+  ssh_known_hosts: newc-web.new.ox.ac.uk
 before_install:
-  - openssl aes-256-cbc -K $encrypted_d7212df6fd0a_key -iv $encrypted_d7212df6fd0a_iv
-    -in deploy_rsa.enc -out deploy_rsa -d
-  - if [[ `npm -v` != 3* ]]; then npm i -g npm@3; fi
-
+- if [[ `npm -v` != 3* ]]; then npm i -g npm@3; fi
 install:
-  - npm install
-
+- npm install
 script:
-  - npm run build
-
+- npm run build
 before_deploy:
-  - eval "$(ssh-agent -s)"
-  - chmod 600 $TRAVIS_BUILD_DIR/deploy_rsa
-  - ssh-add $TRAVIS_BUILD_DIR/deploy_rsa
-  - echo $TRAVIS_COMMIT > $TRAVIS_BUILD_DIR/build/DEPLOYED_COMMIT.txt
-
+- openssl aes-256-cbc -K $encrypted_a1f816d44b7b_key -iv $encrypted_a1f816d44b7b_iv
+  -in deploy_rsa.enc -out /tmp/deploy_rsa -d
+- eval "$(ssh-agent -s)"
+- chmod 600 /tmp/deploy_rsa
+- ssh-add /tmp/deploy_rsa
 deploy:
   skip_cleanup: true
   provider: script
-  script: rsync -zvr -e "ssh -o StrictHostKeyChecking=no" $TRAVIS_BUILD_DIR/build/ $SSH_USER@newc-web.new.ox.ac.uk:~/website
+  script: rsync -r --delete-after --quiet $TRAVIS_BUILD_DIR/build balzan@newc-web.new.ox.ac.uk:~/website
   on:
     branch: master
