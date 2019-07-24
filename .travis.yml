@@ -16,7 +16,7 @@ script:
   - npm run build
 
 before_deploy:
-  - echo "$SERVER_SSH_PUBLIC_KEY" >> $HOME/.ssh/known_hosts
+  - echo "newc-web.new.ox.ac.uk,129.67.111.249 ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBF3BA6rX6cxaLyLpWaUUZNCJwq9M/hVW5kmG0iM0LErVFKUy9REvbT7lqzgi8qS7ZnGl+Ehg0OpXyNaqdRPfNVw=" >> $HOME/.ssh/known_hosts
   - openssl aes-256-cbc -K $encrypted_a1f816d44b7b_key -iv $encrypted_a1f816d44b7b_iv
     -in deploy_rsa.enc -out /tmp/deploy_rsa -d
   - eval "$(ssh-agent -s)"
