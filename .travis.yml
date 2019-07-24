@@ -26,6 +26,6 @@ before_deploy:
 deploy:
   skip_cleanup: true
   provider: script
-  script: ls -la $TRAVIS_BUILD_DIR/build/ && rsync --recursive --delete-after --quiet $TRAVIS_BUILD_DIR/build/ balzan@newc-web.new.ox.ac.uk:~/website
+  script: rsync --recursive --delete-after --quiet $TRAVIS_BUILD_DIR/build/ balzan@newc-web.new.ox.ac.uk:~/website
   on:
     branch: master
