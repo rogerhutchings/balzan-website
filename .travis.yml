@@ -16,7 +16,7 @@ script:
   - npm run build
 
 before_deploy:
-  - echo $SERVER_SSH_PUBLIC_KEY >> $HOME/.ssh/known_hosts
+  - echo "$SERVER_SSH_PUBLIC_KEY" >> $HOME/.ssh/known_hosts
   - openssl aes-256-cbc -K $encrypted_a1f816d44b7b_key -iv $encrypted_a1f816d44b7b_iv
     -in deploy_rsa.enc -out /tmp/deploy_rsa -d
   - eval "$(ssh-agent -s)"
@@ -26,6 +26,6 @@ before_deploy:
 deploy:
   skip_cleanup: true
   provider: script
-  script: ls -la $TRAVIS_BUILD_DIR/build/ && rsync -r --delete-after --quiet $TRAVIS_BUILD_DIR/build/ balzan@newc-web.new.ox.ac.uk:~/website
+  script: ls -la $TRAVIS_BUILD_DIR/build/ && rsync --recursive --delete-after --quiet $TRAVIS_BUILD_DIR/build/ balzan@newc-web.new.ox.ac.uk:~/website
   on:
     branch: master
