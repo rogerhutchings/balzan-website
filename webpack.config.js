@@ -1,7 +1,7 @@
 const path = require('path')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const { WebpackManifestPlugin } = require('webpack-manifest-plugin')
-const CssMinimizerPlugin = require("css-minimizer-webpack-plugin")
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin')
 const devMode = process.env.ELEVENTY_ENV !== 'production'
 
 module.exports = {
@@ -12,11 +12,11 @@ module.exports = {
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: devMode ? '[name].css' :'[name].[contenthash].css',
+      filename: devMode ? '[name].css' : '[name].[contenthash].css',
     }),
     new WebpackManifestPlugin({
       fileName: path.resolve(__dirname, 'src/_data/manifest.json'),
-      publicPath: '/assets/'
+      publicPath: '/assets/',
     }),
   ],
   module: {
@@ -29,9 +29,6 @@ module.exports = {
     ],
   },
   optimization: {
-    minimizer: [
-      `...`,
-      new CssMinimizerPlugin(),
-    ],
+    minimizer: [`...`, new CssMinimizerPlugin()],
   },
 }
