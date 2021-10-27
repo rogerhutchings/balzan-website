@@ -1,0 +1,44 @@
+<section class="max-w-2xl mx-auto px-8 pt-52">
+  <h2>
+    Organisation
+  </h2>
+  <ul>
+    {% for person in (organisation.push(administrator), organisation) %}
+      <li class="mb-6 grid grid-cols-5 gap-7">
+        <div class="">
+          {% if person.image %}
+            {% image person.image, person.name, "rounded-full border-2 border-white" %}
+          {% endif %}
+        </div>
+        <div class="col-span-4">
+          <div>
+            {{ person.name }}
+          </div>
+          <div>
+            {{ person.title }}
+          </div>
+          <div>
+            {{ person.organisation }}
+          </div>
+          {% if person.email or person.website %}
+            <div>
+              {% if person.email %}
+                <a href="mailto:{{ person.email }}">
+                  Email
+                </a>
+              {% endif %}
+              {% if person.email and person.website %}
+                &ndash;
+              {% endif %}
+              {% if person.website %}
+                <a target="_blank" href="{{ person.website }}">
+                  Website
+                </a>
+              {% endif %}
+            </div>
+          {% endif %}
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
+</section>

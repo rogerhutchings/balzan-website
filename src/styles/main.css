@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  a {
+    @apply text-teal;
+  }
+  a:hover {
+    @apply hover:underline;
+  }
+  h2 {
+    @apply text-4xl font-medium mb-6;
+  }
+  h3 {
+    @apply text-3xl font-medium my-6;
+  }
+  h4 {
+    @apply text-2xl font-medium my-6;
+  }
+  ol {
+    @apply mb-6;
+  }
+  ol li {
+    @apply list-decimal;
+  }
+  p {
+    @apply mb-6;
+  }
+  strong {
+    @apply text-teal;
+  }
+  ul {
+    @apply mb-6;
+  }
+  ul li {
+    @apply list-disc;
+  }
+}
+
+@layer utilities {
+  .text-shadow {
+    text-shadow: 0 0 10px rgb(0 0 0 / 50%)
+  }
+}

@@ -1,0 +1,98 @@
+- institution: Oxford
+  people:
+    - name: David Alonso
+      email: david.alonso@physics.ox.ac.uk
+    - name: Steve Balbus
+      email: steven.balbus@astro.ox.ac.uk
+    - name: Andy Bunker
+      email: Andy.Bunker@physics.ox.ac.uk
+    - name: Martin Bureau
+      email: bureau@astro.ox.ac.uk
+    - name: Joseph Conlon
+      email: j.conlon1@physics.ox.ac.uk
+    - name: Roger Davies
+      email: r.davies1@physics.ox.ac.uk
+    - name: Julien Devriendt
+      email: j.devriendt1@physics.ox.ac.uk
+    - name: Pedro Ferreira
+      email: p.ferreira1@physics.ox.ac.uk
+    - name: Ian Haywood
+      email: ian.heywood@gmail.com
+    - name: Matt Jarvis
+      email: matt.jarvis@physics.ox.ac.uk
+    - name: Mike Jones
+      email: M.Jones3@physics.ox.ac.uk
+    - name: Chris Lintott
+      email: cjl@astro.ox.ac.uk
+    - name: John Maggorian
+      email: j.maggorian@physics.ox.ac.uk
+    - name: John March-Russell
+      email: jmr@thphys.ox.ac.uk
+    - name: Lance Miller
+      email: l.miller1@physics.ox.ac.uk
+    - name: Dimitra Rigopoulou
+      email: dimitra.rigopoulou@physics.ox.ac.uk
+    - name: Angela Taylor
+      email: angela.taylor@physics.ox.ac.uk
+    - name: Joe Silk
+      email: silk@iap.fr
+    - name: Adrienne Slyz
+      email: a.slyz1@physics.ox.ac.uk
+    - name: Kris Zarb-Adami
+      email: kristian.zarbadami@physics.ox.ac.uk
+
+- institution: Johns Hopkins
+  people:
+    - name: Marc Kamionkowski
+      email: kamion@jhu.edu
+    - name: David Kaplan
+      email: dkaplan@pha.jhu.edu
+    - name: Jared Kaplan
+      email: kapla14@jhu.edu
+    - name: Julian Krolik
+      email: jhk@pha.jhu.edu
+    - name: Colin Norman
+      email: norman@stsci.edu
+    - name: Joe Silk
+      email: silk@iap.fr
+    - name: Alex Szalay
+      email: szalay@jhu.edu
+    - name: Rosemary Wyse
+      email: wyse@pha.jhu.edu
+
+- institution: Institut d'Astrophysique
+  people:
+    - name: Francis Bernardeau
+      email: francis.bernardeau@iap.fr
+    - name: Francois Bouchet
+      email: bouchet@iap.fr
+    - name: Stephane Charlot
+      email: charlot@iap.fr
+    - name: Stephane Colombi
+      email: colombi@iap.fr
+    - name: Kumiko Kotera
+      email: kotera@iap.fr
+    - name: Guillaume Lavaux
+      email: lavaux@iap.fr
+    - name: Gary Mamon
+      email: gam@iap.fr
+    - name: Jerome Martin
+      email: jmartin@iap.fr
+    - name: Henry McCracken
+      email: hjmcc@iap.fr
+    - name: Roya Mohayaee
+      email: mohayaee@iap.fr
+    - name: Christophe Pichon
+      email: pichon@iap.fr
+    - name: Sebastian Pierani
+      email: peirani@iap.fr
+    - name: Joe Silk
+      email: silk@iap.fr
+    - name: Jean-Philippe Uzan
+      email: uzan@iap.fr
+    - name: Elisabeth Vangioni
+      email: vangioni@iap.fr
+    - name: Marta Volonteri
+      email: martav@iap.fr
+    - name: Ben Wandelt
+      email: wandelt@iap.fr

@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>{{ title }}</title>
+     <link rel="stylesheet" type="text/css" href="{{ manifest['main.css'] }}" />
+  </head>
+  <body class="text-lg bg-black text-white">
+    <main>
+      {{ content | safe }}
+    </main>
+    <script src="{{ manifest['main.js'] }}"></script>
+  </body>
+</html>
