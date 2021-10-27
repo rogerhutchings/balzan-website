@@ -7,14 +7,17 @@ const md = new markdownIt({
   html: true,
 })
 
+/**
+ * Shortcode for generating organisation profile photos
+ */
 async function imageShortcode(src, alt, cls, sizes) {
-  let metadata = await Image(src, {
+  const metadata = await Image(src, {
     widths: [200],
     formats: ['avif', 'jpeg'],
     outputDir: './_site/img/',
   })
 
-  let imageAttributes = {
+  const imageAttributes = {
     alt,
     class: cls,
     sizes,
@@ -25,6 +28,9 @@ async function imageShortcode(src, alt, cls, sizes) {
   return Image.generateHTML(metadata, imageAttributes)
 }
 
+/**
+ * Shortcode for generating hero background image inline styles
+ */
 async function heroImageShortcode(src) {
   const metadata = await Image(src, {
     formats: ['jpeg'],
