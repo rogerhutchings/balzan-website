@@ -25,13 +25,13 @@ async function imageShortcode(src, alt, cls, sizes) {
   return Image.generateHTML(metadata, imageAttributes)
 }
 
-async function heroImageShortcode(src, alt, cls, sizes) {
+async function heroImageShortcode(src) {
   const metadata = await Image(src, {
     formats: ['jpeg'],
     outputDir: './_site/img/',
   })
-  const data = metadata.jpeg[metadata.jpeg.length - 1]
-  return `background-image: url('${data.url}')`
+  const { url } = metadata.jpeg[metadata.jpeg.length - 1]
+  return `background-image: url('${url}')`
 }
 
 module.exports = function (eleventyConfig) {
