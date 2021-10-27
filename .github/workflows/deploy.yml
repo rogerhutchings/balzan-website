@@ -4,28 +4,19 @@ on:
   push:
     branches:
     - master
-  pull_request:
-    branches:
-    - master
 
-  # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "build"
   build_and_deploy:
-    # The type of runner that the job will run on
     runs-on: ubuntu-latest
-
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-
-      - name: Build using node.ks
+      - name: Build using node.js
         uses: actions/setup-node@v1
         with:
           node-version: '14.x'
       - run: npm install
       - run: npm run build --if-present
+      - name: rsync deployments
+        uses: contention/rsync-deployments@v1.0.0
