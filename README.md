@@ -13,7 +13,11 @@ These are stored in `src/_data/application_dates.yml`, and consist of:
 
 ### Contact details
 
-Contact details for the administrator are stored in `src/_data/application_dates.yml`
+Contact details for the administrator are stored in `src/_data/application_dates.yml`.
+
+### Host scientist details
+
+The list of host scientists is stored in `src/_data/host_scientists.yml`.
 
 ### Other content
 
