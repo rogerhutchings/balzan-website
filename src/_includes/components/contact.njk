@@ -1,0 +1,84 @@
+<section class="max-w-2xl mx-auto px-8 pt-52" id="contact">
+  <h2>
+    Contact
+  </h2>
+  <h3>
+    General enquiries
+  </h3>
+  <p>
+    For more information, general queries or to submit an application, please contact {{ administrator.name }}:
+  </p>
+
+  <address class="not-italic">
+    <div>
+      {{ administrator.name }}
+    </div>
+    <div class="mb-7">
+      {% for line in administrator.address %}
+        {{ line }}
+        {% if not loop.last %}
+          <br />
+        {% endif %}
+      {% endfor %}
+    </div>
+    <div>
+      Tel: <a href="tel:+{{ administrator.tel.countryCode }}{{ administrator.tel.areaCode }}{{ administrator.tel.number }}">+{{ administrator.tel.countryCode }} (0){{ administrator.tel.areaCode }} {{ administrator.tel.number }}</a>
+      <br />
+      Email: <a href="mailto:{{ administrator.email }}">{{ administrator.email }}</a>
+    </div>
+  </address>
+
+  <h3>
+    Participating Institutions
+  </h3>
+
+  <p>
+    Contact information for the participating institutions can be found at the following links:
+  </p>
+
+  <ul>
+    <li>
+      <a target="_blank" href="http://www2.physics.ox.ac.uk/research/astrophysics">
+        Astrophysics Dept, Oxford
+      </a>
+    </li>
+    <li>
+      <a target="_blank" href="http://www.new.ox.ac.uk">
+        New College, Oxford
+      </a>
+    </li>
+    <li>
+      <a target="_blank" href="http://physics-astronomy.jhu.edu">
+        Dept of Physics and Astronomy, Johns Hopkins University
+      </a>
+    </li>
+    <li>
+      <a target="_blank" href="http://www.iap.fr">
+        Institut d'Astrophysique, Paris
+      </a>
+    </li>
+  </ul>
+
+  <h3>Host Scientists</h3>
+
+  <p>Collaborative visits are welcomed by members of the hosting institutions including:</p>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+  {% for list in host_scientists %}
+    <div>
+      <h4>
+        {{ list.institution }}
+      </h4>
+      <ul>
+        {% for person in list.people %}
+          <li>
+            <a href="mailto:{{ person.email }}">
+              {{ person.name }}
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  {% endfor %}
+  </div>
+</section>

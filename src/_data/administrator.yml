@@ -1,0 +1,15 @@
+name: Tanya Gujral
+title: Executive Assistant
+organisation: Dept of Physics, University of Oxford
+email: tanya.gujral@physics.ox.ac.uk
+address:
+  - Denys Wilkinson Building
+  - Keble Road
+  - Oxford
+  - OX1 3RH
+  - UK
+tel:
+  countryCode: 44 # No leading plus sign
+  areaCode: 1865 # No leading zero
+  number: 273302
+image: './src/images/organisation/gujral.jpeg'
