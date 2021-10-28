@@ -19,10 +19,7 @@
     @apply text-2xl font-medium my-6;
   }
   ol {
-    @apply mb-6;
-  }
-  ol li {
-    @apply list-decimal;
+    @apply mb-6 list-decimal;
   }
   p {
     @apply mb-6;
@@ -31,10 +28,7 @@
     @apply text-teal;
   }
   ul {
-    @apply mb-6;
-  }
-  ul li {
-    @apply list-disc;
+    @apply mb-6 list-disc;
   }
 }
 
