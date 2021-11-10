@@ -40,10 +40,26 @@ async function heroImageShortcode(src) {
   return `background-image: url('${url}')`
 }
 
+/**
+ * Shortcode for generating OG image url
+ */
+async function ogImageShortcode(src) {
+  const metadata = await Image(src, {
+    formats: ['jpeg'],
+    outputDir: './_site/img/',
+  })
+  const { url } = metadata.jpeg[metadata.jpeg.length - 1]
+  return url
+}
+
+/**
+ * Eleventy config object
+ */
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(automaticNoopener)
   eleventyConfig.addNunjucksAsyncShortcode('image', imageShortcode)
   eleventyConfig.addNunjucksAsyncShortcode('heroBg', heroImageShortcode)
+  eleventyConfig.addNunjucksAsyncShortcode('ogImage', ogImageShortcode)
   eleventyConfig.addPairedShortcode('markdown', (content) => md.render(content))
   eleventyConfig.addDataExtension('yml', (contents) => yaml.load(contents))
 

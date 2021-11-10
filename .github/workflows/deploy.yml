@@ -17,6 +17,8 @@ jobs:
           node-version: '14.x'
       - run: npm install
       - run: npm run build --if-present
+        env:
+          URL: 'https://balzan.new.ox.ac.uk'
       - name: Deploy via rsync
         uses: burnett01/rsync-deployments@5.1
         with:
