@@ -56,12 +56,12 @@ async function ogImageShortcode(src) {
  * Eleventy config object
  */
 module.exports = function (eleventyConfig) {
-  eleventyConfig.addPlugin(automaticNoopener)
+  eleventyConfig.addDataExtension('yml', (contents) => yaml.load(contents))
   eleventyConfig.addNunjucksAsyncShortcode('image', imageShortcode)
   eleventyConfig.addNunjucksAsyncShortcode('heroBg', heroImageShortcode)
   eleventyConfig.addNunjucksAsyncShortcode('ogImage', ogImageShortcode)
   eleventyConfig.addPairedShortcode('markdown', (content) => md.render(content))
-  eleventyConfig.addDataExtension('yml', (contents) => yaml.load(contents))
+  eleventyConfig.addPlugin(automaticNoopener)
 
   return {
     dir: { input: 'src', output: '_site' },
