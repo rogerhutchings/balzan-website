@@ -36,7 +36,7 @@
       email: silk@iap.fr
     - name: Adrienne Slyz
       email: a.slyz1@physics.ox.ac.uk
-      - name: Stephen Smartt
+    - name: Stephen Smartt
       email: stephen.smartt@physics.ox.ac.uk
     - name: Kris Zarb-Adami
       email: kristian.zarbadami@physics.ox.ac.uk
@@ -68,13 +68,13 @@
       email: bouchet@iap.fr
     - name: Stephane Charlot
       email: charlot@iap.fr
-      -name: Marco Cirelli (LPTHE + IAP)
+    - name: Marco Cirelli (LPTHE + IAP)
       email: marco.cirelli@lpthe.jussieu.fr
     - name: Stephane Colombi
       email: colombi@iap.fr
-      -name: Frederic Dagne
-      -email: daigne@iap.fr
-      - name: Irina Dvorkin
+    - name: Frederic Dagne
+      email: daigne@iap.fr
+    - name: Irina Dvorkin
       email: dvorkin@iap.fr
     - name: Kumiko Kotera
       email: kotera@iap.fr
