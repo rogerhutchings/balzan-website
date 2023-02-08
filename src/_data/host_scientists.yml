@@ -10,8 +10,6 @@
       email: bureau@astro.ox.ac.uk
     - name: Joseph Conlon
       email: j.conlon1@physics.ox.ac.uk
-    - name: Roger Davies
-      email: r.davies1@physics.ox.ac.uk
     - name: Julien Devriendt
       email: j.devriendt1@physics.ox.ac.uk
     - name: Pedro Ferreira
@@ -23,7 +21,7 @@
     - name: Mike Jones
       email: M.Jones3@physics.ox.ac.uk
     - name: Chris Lintott
-      email: cjl@astro.ox.ac.uk
+      email: chris.lintott@physics.ox.ac.uk
     - name: John Maggorian
       email: j.maggorian@physics.ox.ac.uk
     - name: John March-Russell
@@ -38,6 +36,8 @@
       email: silk@iap.fr
     - name: Adrienne Slyz
       email: a.slyz1@physics.ox.ac.uk
+      - name: Stephen Smartt
+      email: stephen.smartt@physics.ox.ac.uk
     - name: Kris Zarb-Adami
       email: kristian.zarbadami@physics.ox.ac.uk
 
@@ -68,8 +68,14 @@
       email: bouchet@iap.fr
     - name: Stephane Charlot
       email: charlot@iap.fr
+      -name: Marco Cirelli (LPTHE + IAP)
+      email: marco.cirelli@lpthe.jussieu.fr
     - name: Stephane Colombi
       email: colombi@iap.fr
+      -name: Frederic Dagne
+      -email: daigne@iap.fr
+      - name: Irina Dvorkin
+      email: dvorkin@iap.fr
     - name: Kumiko Kotera
       email: kotera@iap.fr
     - name: Guillaume Lavaux
@@ -84,14 +90,10 @@
       email: mohayaee@iap.fr
     - name: Christophe Pichon
       email: pichon@iap.fr
-    - name: Sebastian Pierani
-      email: peirani@iap.fr
     - name: Joe Silk
       email: silk@iap.fr
     - name: Jean-Philippe Uzan
       email: uzan@iap.fr
-    - name: Elisabeth Vangioni
-      email: vangioni@iap.fr
     - name: Marta Volonteri
       email: martav@iap.fr
     - name: Ben Wandelt
