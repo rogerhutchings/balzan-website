@@ -1,7 +1,7 @@
-name: Tanya Gujral
+name: Lawrence Clark
 title: Executive Assistant
 organisation: Dept of Physics, University of Oxford
-email: tanya.gujral@physics.ox.ac.uk
+email: lawrence.selmons-clark@physics.ox.ac.uk
 address:
   - Denys Wilkinson Building
   - Keble Road
@@ -12,4 +12,4 @@ tel:
   countryCode: 44 # No leading plus sign
   areaCode: 1865 # No leading zero
   number: 273302
-image: './src/images/organisation/gujral.jpeg'
+image: './src/images/organisation/placeholder.jpeg'
