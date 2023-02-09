@@ -12,4 +12,4 @@ tel:
   countryCode: 44 # No leading plus sign
   areaCode: 1865 # No leading zero
   number: 273302
-image: './src/images/organisation/placeholder.jpeg'
+image: './src/images/organisation/placeholder.jpg'
