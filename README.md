@@ -23,6 +23,11 @@ The list of host scientists is stored in `src/_data/host_scientists.yml`.
 
 Other content, such as "About the Project", is saved as markdown inside Nunjucks template files, due to the way Eleventy handles variable interpolation in templates. These are stored in the `src/_includes/components` directory.
 
+## Requirements
+
+- Node 20
+- [pnpm](https://pnpm.io/)
+
 ## Deployment
 
 On commits to the `master` branch, the site is rebuilt and pushed to the host at New College by a GitHub Action using `rsync`. This needs to have the following secrets set:
