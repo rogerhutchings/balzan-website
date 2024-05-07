@@ -11,7 +11,8 @@
     "build:webpack": "ELEVENTY_ENV=production webpack --mode production",
     "build:eleventy": "ELEVENTY_ENV=production eleventy",
     "build": "NODE_ENV=production npm-run-all --sequential clean build:webpack build:eleventy",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "preinstall": "npx only-allow pnpm"
   },
   "license": "ISC",
   "dependencies": {
