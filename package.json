@@ -7,15 +7,15 @@
     "node": "20"
   },
   "scripts": {
-    "clean": "rimraf _site",
-    "serve:webpack": "webpack --mode development --watch",
-    "serve:eleventy": "ELEVENTY_ENV=development eleventy --serve",
-    "serve": "npm-run-all clean --parallel serve:*",
-    "build:webpack": "ELEVENTY_ENV=production webpack --mode production",
     "build:eleventy": "ELEVENTY_ENV=production eleventy",
-    "build": "NODE_ENV=production npm-run-all --sequential clean build:webpack build:eleventy",
+    "build:webpack": "ELEVENTY_ENV=production webpack --mode production",
+    "build": "pnpm clean && NODE_ENV=production pnpm build:webpack && NODE_ENV=production pnpm build:eleventy",
+    "clean": "rimraf _site",
     "format": "prettier --write .",
-    "preinstall": "npx only-allow pnpm"
+    "preinstall": "npx only-allow pnpm",
+    "serve:eleventy": "ELEVENTY_ENV=development eleventy --serve",
+    "serve:webpack": "webpack --mode development --watch",
+    "serve": "pnpm clean && conc \"pnpm:serve:*\""
   },
   "license": "ISC",
   "dependencies": {
@@ -23,13 +23,13 @@
     "@11ty/eleventy-img": "^4.0.2",
     "@11ty/eleventy-upgrade-help": "^2.0.5",
     "autoprefixer": "^10.4.19",
+    "concurrently": "^8.2.2",
     "css-loader": "^7.1.1",
     "css-minimizer-webpack-plugin": "^7.0.0",
     "dotenv": "^16.4.5",
     "eleventy-plugin-automatic-noopener": "^2.0.2",
     "js-yaml": "^4.1.0",
     "mini-css-extract-plugin": "^2.9.0",
-    "npm-run-all": "^4.1.5",
     "postcss": "^8.4.38",
     "postcss-loader": "^8.1.1",
     "prettier": "^3.2.5",
