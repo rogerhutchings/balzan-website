@@ -17,9 +17,9 @@ jobs:
           node-version: '20'
       - uses: pnpm/action-setup@v4
         with:
-          version: 8
+          version: 9
       - run: pnpm install --frozen-lockfile
-      - run: pnpm run build --if-present
+      - run: pnpm run build
         env:
           URL: 'https://balzan.new.ox.ac.uk'
       - name: Deploy via rsync

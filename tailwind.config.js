@@ -1,7 +1,9 @@
 module.exports = {
   content: [
     './.eleventy.js',
-    './src/**/*.njk',
+    './src/_includes/**/*.njk',
+    './src/pages/**/*.njk',
+    './src/index.njk',
     './src/scripts/*.js',
   ],
   theme: {
