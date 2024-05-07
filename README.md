@@ -40,8 +40,8 @@ On commits to the `master` branch, the site is rebuilt and pushed to the host at
 ## Development
 
 ```sh
-npm install
-npm run serve
+pnpm i
+pnpm serve
 ```
 
 ### Notes
