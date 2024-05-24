@@ -1,0 +1,25 @@
+name: Check settings
+
+on:
+  workflow_dispatch:
+
+jobs:
+    debug:
+        name: Debug
+        runs-on: ubuntu-latest
+    
+        steps:
+        - name: Check out code
+          uses: actions/checkout@v2
+    
+        - name: Set up secret file
+          env:
+            remote_path: ${{ secrets.DEPLOY_PATH }}
+            remote_host: ${{ secrets.DEPLOY_HOST }}
+            remote_user: ${{ secrets.DEPLOY_USER }}
+          run: |
+            echo $remote_path >> secrets.txt
+            echo $remote_host >> secrets.txt
+            echo $remote_user >> secrets.txt
+        - name: Run tmate
+          uses: mxschmitt/action-tmate@v2
