@@ -2,3 +2,4 @@ node_modules
 _site
 src/_data/manifest.json
 .DS_Store
+deploy_rsa
